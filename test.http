@@ -1,0 +1,8 @@
+### Get controller schedules
+GET {{host}}/controllers/schedules
+
+### Get customer details
+GET {{host}}/customers/details
+
+### Run zone 1
+POST {{host}}/zones/{{zone_id}}/run?run_time=60
