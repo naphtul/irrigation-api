@@ -1,8 +1,14 @@
+### UI
+GET {{host}}/ui
+
 ### Get controller schedules
 GET {{host}}/controllers/schedules
 
 ### Get customer details
 GET {{host}}/customers/details
 
-### Run zone 1
-POST {{host}}/zones/{{zone_id}}/run?run_time=60
+### Run zone
+POST {{host}}/zones/{{zone_id}}?run_time=60
+
+### Stop zone
+DELETE {{host}}/zones/{{zone_id}}

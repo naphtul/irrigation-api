@@ -1,4 +1,8 @@
 from flask import Flask
-app = Flask(__name__)
+from flask_cors import CORS
+
+
+app = Flask(__name__, static_url_path='', static_folder='../irrigation-ui/build')
+CORS(app)
 
 import application.controllers.Irrigation
